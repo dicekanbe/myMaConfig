@@ -4,13 +4,13 @@
 
 ```bash
 # Create bare repository
-mkdir $HOME/macOS
-git init --bare $HOME/macOS
+mkdir $HOME/myMaConfig
+git init --bare $HOME/myMaConfig 
 ssh-keygen -t rsa
-alias config='git --git-dir=$HOME/macOS/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/myMaConfig/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
 config config pull.rebase true
-config remote add origin git@github.com:rikuson/macOS.git
+config remote add origin git@github.com:dicekanbe/myMaConfig.git
 config pull origin master
 config branch --set-upstream-to=origin/master
 
