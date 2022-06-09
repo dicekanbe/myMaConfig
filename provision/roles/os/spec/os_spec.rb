@@ -29,9 +29,7 @@ end
 describe command('defaults read com.apple.desktopservices DSDontWriteNetworkStores') do
   its(:stdout) { should match 'True' }
 end
-describe command('defaults read com.apple.dock autohide') do
-  its(:stdout) { should match '1' }
-end
+
 describe command('defaults read com.apple.menuextra.battery ShowPercent') do
   its(:stdout) { should match 'True' }
 end

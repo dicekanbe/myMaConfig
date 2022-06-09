@@ -66,13 +66,6 @@
     value: true
   notify: Restart Finder
 
-- name: Auto hide dock
-  osx_defaults:
-    domain: com.apple.dock
-    key: autohide
-    type: int
-    value: 1
-
 - name: Show battery status
   osx_defaults:
     domain: com.apple.menuextra.battery
