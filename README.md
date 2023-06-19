@@ -4,13 +4,13 @@
 
 ```bash
 # Create bare repository
-mkdir $HOME/myMaConfig
-git init --bare $HOME/myMaConfig 
+mkdir $HOME/workspace
+git init --bare $HOME/workspace
 ssh-keygen -t rsa
 alias config='git --git-dir=$HOME/myMaConfig/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
 config config pull.rebase true
-config remote add origin git@github.com:dicekanbe/myMaConfig.git
+config remote add origin git@github.com:dicekanbe/workspace.git
 config pull origin master
 config branch --set-upstream-to=origin/master
 
