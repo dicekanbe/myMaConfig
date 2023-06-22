@@ -1,2 +1,45 @@
 ---
 - import_tasks: homebrew.yml
+
+
+# git
+- name: Set git editor
+  git_config:
+    name: core.editor
+    scope: global
+    value: nvim
+- name: Setup global .gitignore
+  git_config:
+    name: core.excludesfile
+    value: ~/.gitignore
+    scope: global
+- name: Show Japanese properly
+  git_config:
+    name: core.quotepath
+    value: false
+    scope: global
+- name: Set pull rule
+  git_config:
+    name: pull.rebase
+    value: true
+    scope: global
+- name: Disable pager for branch
+  git_config:
+    name: pager.branch
+    value: false
+    scope: global
+- name: Disable pager for stash
+  git_config:
+    name: pager.stash
+    value: false
+    scope: global
+- name: Set git email
+  git_config:
+    name: user.email
+    value: 'dicekanbe@users.noreply.github.com'
+    scope: global
+- name: Set git user name
+  git_config:
+    name: user.name
+    value: 'ABE Daisuke'
+    scope: global

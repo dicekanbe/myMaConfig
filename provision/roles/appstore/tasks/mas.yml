@@ -1,0 +1,8 @@
+---
+- name: Install mas packages
+  mas:
+    id: "{{ item.id }}"
+  with_items:
+    - { name: Kindle, id: 405399194 }
+    - { name: Microsoft Remote Desktop, id: 1295203466 }
+    - { name: Spark, id: 1176895641 }

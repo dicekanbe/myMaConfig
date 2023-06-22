@@ -1,46 +1,4 @@
 ---
-- name: Enable three finder drag
-  osx_defaults:
-    domain: "{{ item.domain }}"
-    key: "{{ item.key }}"
-    type: "{{ item.type }}"
-    value: "{{ item.value }}"
-  with_items:
-    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
-      key: TrackpadThreeFingerDrag
-      type: bool
-      value: true
-    - domain: com.apple.AppleMultitouchTrackpad
-      key: TrackpadThreeFingerDrag
-      type: bool
-      value: true
-
-- name: Enable tap
-  osx_defaults:
-    domain: com.apple.AppleMultitouchTrackpad
-    key: Clicking
-    type: int
-    value: 1
-
-- name: Enable three finger tap
-  osx_defaults:
-    domain: "{{ item.domain }}"
-    key: "{{ item.key }}"
-    type: "{{ item.type }}"
-    value: "{{ item.value }}"
-  with_items:
-    - domain: NSGlobalDomain
-      key: com.apple.trackpad.forceClick
-      type: int
-      value: 0
-    - domain: com.apple.AppleMultitouchTrackpad
-      key: TrackpadThreeFingerTapGesture
-      type: int
-      value: 2
-    - domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
-      key: TrackpadThreeFingerTapGesture
-      type: int
-      value: 2
 
 - name: Show dotfiles
   osx_defaults:
@@ -65,13 +23,6 @@
     type: string
     value: true
   notify: Restart Finder
-
-- name: Auto hide dock
-  osx_defaults:
-    domain: com.apple.dock
-    key: autohide
-    type: int
-    value: 1
 
 - name: Show battery status
   osx_defaults:
