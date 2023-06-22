@@ -14,10 +14,11 @@ if [[ -z "$WORKSPACE_REPOSITORY_URL" ]]; then
 fi
 
 # Install homebrew
-/bin/bash -c `curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh`
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [[ -d /opt/homebrew ]]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
 brew update
 brew upgrade
 
