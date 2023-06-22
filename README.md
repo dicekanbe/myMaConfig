@@ -1,7 +1,11 @@
 # My workspace on macOS
 
-## Prepare for provisioning
 
+## install
+
+```bash
+ssh-keygen -t ed25519
+```
 
 Run install script
 ```bash
