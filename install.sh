@@ -38,5 +38,3 @@ zinit self-update
 # Initialize
 brew install ansible
 
-touch $HOME/.zprofile
-

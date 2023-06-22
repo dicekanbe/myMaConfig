@@ -68,7 +68,6 @@ setopt AUTO_CD
 #complement env values 
 setopt AUTO_PARAM_KEYS
 
-eval "$(anyenv init -)"
 
 export AWS_PROFILE=nl-pro
 #export AWS_PROFILE=netlearning

@@ -23,10 +23,9 @@
     - { name: onedrive}
     - { name: zoom}
     - { name: kubernetes-cli}
-    - { name: iterm2}
     - { name: tableplus}
     - { name: asdf}
-    - { name: firefox}
+    - { name: dropbox}
     - { name: sequel-pro}
     - { name: sublime-text}
     - { name: brave-browser }
@@ -34,7 +33,7 @@
 - name: Tap brew packages
   homebrew_tap:
     name: "homebrew/cask-fonts"
-- name: Install font
+- name: Install font ffira-code-nerd-font
   homebrew_cask:
     name: font-fira-code-nerd-font
 

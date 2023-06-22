@@ -3,6 +3,11 @@
   mas:
     id: "{{ item.id }}"
   with_items:
+    - { name: Magnet, id: 441258766 }
     - { name: Kindle, id: 405399194 }
-    - { name: Microsoft Remote Desktop, id: 1295203466 }
     - { name: Spark, id: 1176895641 }
+    - { name: HazeOver, id: 430798174 }
+    - { name: Yoink, id: 457622435 }
+    - { name: Fantastical, id: 975937182 }
+    - { name: Microsoft Remote Desktop, id: 1295203466 }
+
